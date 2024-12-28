@@ -1,0 +1,12 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2
+      author: p.marko
+      changes:
+        - addColumn:
+            tableName: BOOK
+            columns:
+              - column:
+                  name: book_status
+                  type: VARCHAR(50)
+                  defaultValue: "AVAILABLE"
